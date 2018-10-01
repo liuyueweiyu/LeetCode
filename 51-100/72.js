@@ -6,6 +6,7 @@
 var minDistance = function (word1, word2) {
     const len1 = word1.length;
     const len2 = word2.length;
+    //dp[i][j] = the min step with converting word1 with len1 to word2 with len2
     const dp = new Array(len1+1);
 
     for (let i = 0; i <= len1; i++){        //base
